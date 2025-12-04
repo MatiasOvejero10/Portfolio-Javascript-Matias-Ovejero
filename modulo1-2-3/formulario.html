@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #fafafa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        form{
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #0002;
+            width: 300px;
+        }
+        input, button {
+            width: 100%;
+            margin: 10px 0;
+            padding: 8px;
+            font-size: 1em;
+        }
+        .error{
+            color: red;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <form id="registroForm">
+        <h2>Registro</h2>
+        <input type="text" id="nombre" placeholder="Nombre completo">
+        <input type="text" id="email" placeholder="Correo electronico">
+        <input type="text" id="password" placeholder="Contraseña">
+        <button type="submit">Registrarse</button>
+        <p id="mensaje" class="error"></p>
+    </form>
+
+    <script src="formulario.js"></script>
+</body>
+</html>
